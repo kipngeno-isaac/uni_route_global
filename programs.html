@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Program Search | UniRoute Global Group</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&amp;family=Outfit:wght@500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#003385", // Deep Navy from logo
+                        accent: "#F16A22",  // Vibrant Orange from logo
+                        "background-light": "#F8FAFC",
+                        "background-dark": "#0F172A",
+                    },
+                    fontFamily: {
+                        display: ["Outfit", "sans-serif"],
+                        sans: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.75rem",
+                    },
+                },
+            },
+        };
+    </script>
+<style>
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 10px;
+        }
+        .dark .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #334155;
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark text-slate-900 dark:text-slate-100 font-sans antialiased">
+<nav class="sticky top-0 z-50 bg-white/80 dark:bg-background-dark/80 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="flex justify-between h-20 items-center">
+<div class="flex items-center gap-2">
+<div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+<span class="material-icons-round text-white">school</span>
+</div>
+<div class="flex flex-col leading-tight">
+<span class="font-display font-extrabold text-primary dark:text-white tracking-tight text-xl uppercase">UniRoute <span class="text-accent">Global</span></span>
+<span class="text-[10px] tracking-[0.2em] font-medium text-slate-500 uppercase">Study Abroad Agency</span>
+</div>
+</div>
+<div class="hidden md:flex items-center space-x-8">
+<a class="text-sm font-semibold hover:text-accent transition-colors" href="#">Study Destinations</a>
+<a class="text-sm font-semibold hover:text-accent transition-colors" href="#">Programs</a>
+<a class="text-sm font-semibold hover:text-accent transition-colors" href="#">Scholarships</a>
+<a class="text-sm font-semibold hover:text-accent transition-colors" href="#">About Us</a>
+<button class="bg-primary hover:bg-opacity-90 text-white px-6 py-2.5 rounded-full font-bold text-sm transition-all shadow-lg shadow-primary/20">
+                        Apply Now
+                    </button>
+</div>
+<div class="md:hidden">
+<button class="p-2 rounded-lg bg-slate-100 dark:bg-slate-800">
+<span class="material-icons-round">menu</span>
+</button>
+</div>
+</div>
+</div>
+</nav>
+<main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+<div class="mb-8">
+<nav class="flex text-sm text-slate-500 dark:text-slate-400 mb-2">
+<a class="hover:text-primary" href="#">Home</a>
+<span class="mx-2">/</span>
+<span class="text-slate-900 dark:text-slate-100 font-medium">Find Programs</span>
+</nav>
+<h1 class="text-3xl md:text-4xl font-display font-extrabold text-slate-900 dark:text-white">
+                Undergraduate &amp; Postgraduate <span class="text-accent">Opportunities</span>
+</h1>
+<p class="mt-2 text-slate-600 dark:text-slate-400">Discover 2,400+ world-class courses for Kenyan students.</p>
+</div>
+<div class="grid grid-cols-1 lg:grid-cols-4 gap-8">
+<aside class="lg:col-span-1 space-y-6">
+<div class="bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm sticky top-28">
+<div class="flex items-center justify-between mb-6">
+<h2 class="font-display font-bold text-lg">Filters</h2>
+<button class="text-xs font-semibold text-accent hover:underline">Clear All</button>
+</div>
+<div class="space-y-6">
+<div>
+<label class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-3 uppercase tracking-wider">Degree Level</label>
+<div class="space-y-2">
+<label class="flex items-center gap-3 cursor-pointer group">
+<input checked="" class="w-5 h-5 rounded border-slate-300 text-accent focus:ring-accent" type="checkbox"/>
+<span class="text-sm group-hover:text-accent transition-colors">Undergraduate</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-5 h-5 rounded border-slate-300 text-accent focus:ring-accent" type="checkbox"/>
+<span class="text-sm group-hover:text-accent transition-colors">Postgraduate (Masters)</span>
+</label>
+<label class="flex items-center gap-3 cursor-pointer group">
+<input class="w-5 h-5 rounded border-slate-300 text-accent focus:ring-accent" type="checkbox"/>
+<span class="text-sm group-hover:text-accent transition-colors">PHD &amp; Research</span>
+</label>
+</div>
+</div>
+<div>
+<label class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-3 uppercase tracking-wider">Top Destinations</label>
+<select class="w-full rounded-xl border-slate-200 dark:border-slate-700 dark:bg-slate-800 text-sm focus:border-accent focus:ring-accent transition-all">
+<option>United Kingdom</option>
+<option>Canada</option>
+<option>Australia</option>
+<option>United States</option>
+<option>Germany</option>
+</select>
+</div>
+<div>
+<label class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-3 uppercase tracking-wider">Intake Date</label>
+<div class="grid grid-cols-2 gap-2">
+<button class="px-3 py-2 text-xs font-bold rounded-lg border border-slate-200 dark:border-slate-700 hover:border-accent hover:text-accent transition-all bg-slate-50 dark:bg-slate-800/50">Sept 2024</button>
+<button class="px-3 py-2 text-xs font-bold rounded-lg border border-accent text-accent transition-all bg-accent/10">Jan 2025</button>
+<button class="px-3 py-2 text-xs font-bold rounded-lg border border-slate-200 dark:border-slate-700 hover:border-accent hover:text-accent transition-all bg-slate-50 dark:bg-slate-800/50">May 2025</button>
+<button class="px-3 py-2 text-xs font-bold rounded-lg border border-slate-200 dark:border-slate-700 hover:border-accent hover:text-accent transition-all bg-slate-50 dark:bg-slate-800/50">Sept 2025</button>
+</div>
+</div>
+<div>
+<label class="block text-sm font-bold text-slate-700 dark:text-slate-300 mb-3 uppercase tracking-wider">Subject Area</label>
+<div class="relative">
+<input class="w-full pl-9 pr-4 py-2 rounded-xl border-slate-200 dark:border-slate-700 dark:bg-slate-800 text-sm focus:border-accent focus:ring-accent" placeholder="Search subjects..." type="text"/>
+<span class="material-icons-round absolute left-3 top-2.5 text-slate-400 text-sm">search</span>
+</div>
+</div>
+</div>
+<div class="mt-8 pt-8 border-t border-slate-100 dark:border-slate-800">
+<div class="bg-gradient-to-br from-primary to-blue-900 p-6 rounded-2xl relative overflow-hidden group">
+<div class="relative z-10">
+<p class="text-white/80 text-xs font-bold uppercase tracking-widest mb-2">Need Guidance?</p>
+<h3 class="text-white font-display font-bold text-xl leading-tight mb-4">Book a Free Consultation</h3>
+<button class="w-full bg-accent hover:bg-white hover:text-accent text-white font-bold py-3 rounded-xl transition-all flex items-center justify-center gap-2 group">
+                                    Book Now
+                                    <span class="material-icons-round text-lg group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+</div>
+<div class="absolute -right-4 -bottom-4 w-24 h-24 bg-white/10 rounded-full blur-2xl"></div>
+</div>
+</div>
+</div>
+</aside>
+<div class="lg:col-span-3">
+<div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-8 bg-white dark:bg-slate-900 p-4 rounded-2xl border border-slate-200 dark:border-slate-800">
+<div class="relative flex-grow max-w-lg">
+<span class="material-icons-round absolute left-4 top-3 text-slate-400">search</span>
+<input class="w-full pl-12 pr-4 py-2.5 rounded-xl border-slate-200 dark:border-slate-700 dark:bg-slate-800 focus:ring-primary focus:border-primary" placeholder="Search university or course name..." type="text"/>
+</div>
+<div class="flex items-center gap-3">
+<span class="text-sm font-medium text-slate-500 whitespace-nowrap">Sort by:</span>
+<select class="bg-slate-50 dark:bg-slate-800 border-none rounded-xl text-sm font-bold focus:ring-accent">
+<option>Relevance</option>
+<option>Tuition: Low to High</option>
+<option>University Ranking</option>
+</select>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+<div class="group bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all">
+<div class="relative h-48 overflow-hidden">
+<img alt="University campus" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuALZbqmH9BUQt-4hHTLAVR-3uJJ56Meerip6Yn90nEzrindCxQdcURwXARm53A4BE7QWAx4vULgiKW21boYuOZn0T8I953Nw0WN7axQLG6DRsSWxfWyKH_Xx66aBdGVGFKjUmOCQHj8eLXK-vOMGY7y5jSxMB-wKSj0mGkWeOLCFJmz4Q7ANCcdm9I1qvtp9HykzkeMDMbaC1dgRyXuUo2vfwvhoI8HnxbnxduS4UHuMb6z77nyz1NoZ6s2jEBnzMSvOsAv0IDNNhdK"/>
+<div class="absolute top-4 left-4">
+<span class="bg-accent text-white text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-tighter">Bachelors</span>
+</div>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-white hover:text-accent transition-all">
+<span class="material-icons-round">favorite_border</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center overflow-hidden">
+<img alt="Uni Logo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAylrmM6nzy_J2ItGXnQQI7kv0kAoL4MZDYCz2MSHpe1cKxEaN10h_5BjO3uFO20k0f6jxncS6ZJK5n22DqkV1nB4jmKgM-jZXKJovkpwe774FEIROgIinLbwEtstqkRY02IrddWaKgA142WuYzHMt-OPK2U6RelM0St1v8Jwlx1Ba0R5HCz7tLDFC2XIdT_Uqnn3I2MlBabGozOCqdeP3FPqk_4Vdktw8iUEKSbvXdhx1_yUjqwWaSg96c6xXLxdtg0_KtpCP6cHD9"/>
+</div>
+<span class="text-xs font-bold text-slate-500 uppercase tracking-wide">Coventry University, UK</span>
+</div>
+<h3 class="font-display font-bold text-lg mb-4 line-clamp-2 leading-tight group-hover:text-primary dark:group-hover:text-accent transition-colors">BSc Computer Science with Artificial Intelligence</h3>
+<div class="grid grid-cols-2 gap-4 mb-6">
+<div class="flex items-center gap-2">
+<span class="material-icons-round text-slate-400 text-lg">schedule</span>
+<span class="text-xs font-semibold">3 - 4 Years</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-icons-round text-slate-400 text-lg">payments</span>
+<span class="text-xs font-semibold">£16,500/yr</span>
+</div>
+</div>
+<button class="w-full py-3 bg-primary text-white rounded-xl font-bold hover:bg-accent transition-all flex items-center justify-center gap-2">
+                                View Details
+                                <span class="material-icons-round text-lg">visibility</span>
+</button>
+</div>
+</div>
+<div class="group bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all">
+<div class="relative h-48 overflow-hidden">
+<img alt="Student studying" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCu8ixJJntEZescmJMWypNykNttrNvmRGM9H9R_4QlwJtGfVdrCrXjmFfXYBgKmJBmuTAzyVhEs_v3fk3gMRLw7J5_WCPYQawxM2yrTfnGXckflU_ODP9gTCxmUeHMRJNXkbT5SqZS08zNEbHv2gWiSxvii5KX169Znnn2vwxz7QnocrhjsRrbbEE3GBl5dQDxIInv9BNFwZqbrwhNj6c6awA2abI68sr4S7j2FY84Zj5LEuJUS3yhBciCC3EkOaeBMsdx4uNNPhgBR"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-tighter">Masters</span>
+</div>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-white hover:text-accent transition-all">
+<span class="material-icons-round">favorite_border</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center overflow-hidden">
+<img alt="Uni Logo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDJlwHh8Y0wr1YIT68aUVD_4GUUNLTb-sYfoF922XWocbIn5shSPy-lwtnyo5MMF1oEUcwne1pOR04FFO9RFstgppXEKHdLMNH1w3MQZBjetcAXdMjssT5GfKhH8HSxh1kd2_CCpBsXCLGz_85VRkiplmkxa0PekW3TePGvEcVoSOti_UHY2rAJFbmQJzNKZ4XugI0o_E8Aro3YykJjZml85I1t5jt_z1QZOl9utTtbxZ5uCbP8jgQisGUpX-sXPyiwz2uS72xRkqax"/>
+</div>
+<span class="text-xs font-bold text-slate-500 uppercase tracking-wide">Seneca College, Canada</span>
+</div>
+<h3 class="font-display font-bold text-lg mb-4 line-clamp-2 leading-tight group-hover:text-primary dark:group-hover:text-accent transition-colors">Postgraduate Global Business Management</h3>
+<div class="grid grid-cols-2 gap-4 mb-6">
+<div class="flex items-center gap-2">
+<span class="material-icons-round text-slate-400 text-lg">schedule</span>
+<span class="text-xs font-semibold">2 Years</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-icons-round text-slate-400 text-lg">payments</span>
+<span class="text-xs font-semibold">C$18,200/yr</span>
+</div>
+</div>
+<button class="w-full py-3 bg-primary text-white rounded-xl font-bold hover:bg-accent transition-all flex items-center justify-center gap-2">
+                                View Details
+                                <span class="material-icons-round text-lg">visibility</span>
+</button>
+</div>
+</div>
+<div class="group bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all">
+<div class="relative h-48 overflow-hidden">
+<img alt="Library" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDymjOiAKKn0rsuulk0lz02YCLA7_Zs6YvTcXlW_K4kUJDMkVibSz9hBQLhEbbbrmz2iHudcbiotoH83yMh9M4rAijpxpoFXb_x1OcNfOiCCJmtAnNj1kaJMte8D-uDR9fL1s_E9DDjo0sh9JJKfg7N7iOgEf5BWK41q940-pXCalRnuhQxFATs5dywOS_GMrLjSfnBmW3_CZ00QsvBeXOFfbFF6OgRZZuU4izGUANYuV2yHfJEs_0lrPBvjnaD4G4DNQk7eoPlG9a9"/>
+<div class="absolute top-4 left-4">
+<span class="bg-accent text-white text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-tighter">Bachelors</span>
+</div>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-white hover:text-accent transition-all">
+<span class="material-icons-round">favorite_border</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center overflow-hidden">
+<img alt="Uni Logo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKc9da8dHZFtrwWja-xRJ9JiEhib_0RIaNq7kOrKfxFuqx9rrkoW8klURdgCwq9XnZvsrFRzkIH8DTN8PNYIodhXZZkyYvhuRdRqepqkqXUcC76UW-8AwFJ0GFepDchU0KVKwpfp5D3TZJDCiLM6FPZgDXshMz9VmmjLovOneU4ou2o98P8keAC4xeHlQsvjFyZks3su3hPJHH8QIwHg6aphpWsuI9uXZPGvEYBBEdnkQwcxNdON-5avetENMN0AoSt5KBjY5dJd0H"/>
+</div>
+<span class="text-xs font-bold text-slate-500 uppercase tracking-wide">Monash University, Australia</span>
+</div>
+<h3 class="font-display font-bold text-lg mb-4 line-clamp-2 leading-tight group-hover:text-primary dark:group-hover:text-accent transition-colors">Bachelor of Nursing &amp; Midwifery</h3>
+<div class="grid grid-cols-2 gap-4 mb-6">
+<div class="flex items-center gap-2">
+<span class="material-icons-round text-slate-400 text-lg">schedule</span>
+<span class="text-xs font-semibold">4 Years</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-icons-round text-slate-400 text-lg">payments</span>
+<span class="text-xs font-semibold">A$34,800/yr</span>
+</div>
+</div>
+<button class="w-full py-3 bg-primary text-white rounded-xl font-bold hover:bg-accent transition-all flex items-center justify-center gap-2">
+                                View Details
+                                <span class="material-icons-round text-lg">visibility</span>
+</button>
+</div>
+</div>
+<div class="group bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all">
+<div class="relative h-48 overflow-hidden">
+<img alt="Tech" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC55CR0cWZB9SUjpv1lQbb2vEo5RnUZiAfxPfYuuyzTX1otHsbI9Cfkte-bSlUg9aoC_QuuHUOyAQiQTZ-dac2L6yuAIzUv7Pwtp0Ty8kjTatGfWn4plot3H3Mmflg3p5tcD4D09Jik6lcbBnNUeIG6YhBYzKFOlT7AWFHcFIqThHS8I0PLoai4ZlJgLd15VjUjjgws8oI8cfz9SfKgnErn7bA7alpQ8eNxtFl4x4QqE6H4dbRlJ5J97G2DRZsO-sk_po7ius6dqyc9"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-tighter">Masters</span>
+</div>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-white hover:text-accent transition-all">
+<span class="material-icons-round">favorite_border</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center overflow-hidden">
+<img alt="Uni Logo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA1WUC0y8nw4lxHP9u5TfSPpUY-x_tisuX9Hzd16grs3AiS-_a2pYVoD2GSjQQIXumkoJH_n2zATbSBJhO1dlvdjOcnnBFPXDESyIJqQc99yQZ4sB6Ny6fvz6XV9_TSp5JJC1xo8EoA2WhMwgvIDX7N8JLnVGks90INtqZnDp9e4UL8g9nKIQhay_jbKti1joMBYbV639kQK7AXglW3_Gl1UP9ltXYR2gc8H2qJY_QiDy2lN0MlxMCLjVHSOJdN7ds-CuwEVsRM-SMb"/>
+</div>
+<span class="text-xs font-bold text-slate-500 uppercase tracking-wide">IU Germany</span>
+</div>
+<h3 class="font-display font-bold text-lg mb-4 line-clamp-2 leading-tight group-hover:text-primary dark:group-hover:text-accent transition-colors">Master in Data Science (120 ECTS)</h3>
+<div class="grid grid-cols-2 gap-4 mb-6">
+<div class="flex items-center gap-2">
+<span class="material-icons-round text-slate-400 text-lg">schedule</span>
+<span class="text-xs font-semibold">1 - 2 Years</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-icons-round text-slate-400 text-lg">payments</span>
+<span class="text-xs font-semibold">€8,500/yr</span>
+</div>
+</div>
+<button class="w-full py-3 bg-primary text-white rounded-xl font-bold hover:bg-accent transition-all flex items-center justify-center gap-2">
+                                View Details
+                                <span class="material-icons-round text-lg">visibility</span>
+</button>
+</div>
+</div>
+<div class="group bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all">
+<div class="relative h-48 overflow-hidden">
+<img alt="Engineering" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFU-HXyoUvCEu8v5b-svWiRldC1xiZuG4xhQPEyhZ0pSoLa1cdWGmLtN3p7b7odbZL91ISuVWGfmEMEEzOXUz32hzwWg3hWVNdhDB80qS4fRO_JHg3b6Qc6VlHj_VSMYf8ufIDtycP1jpC1kn8HVhTOF6LX3vh5J3y74ZH2OaP52KLxkuDb4EiU7sGRiWXol8FkuZK5lebmw4_K5vu_CO78BtmthBRIF6vOpbLfR432kmi3FsAM02csCOveh_xA9F85jT02P0c014S"/>
+<div class="absolute top-4 left-4">
+<span class="bg-accent text-white text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-tighter">Bachelors</span>
+</div>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-white hover:text-accent transition-all">
+<span class="material-icons-round">favorite_border</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center overflow-hidden">
+<img alt="Uni Logo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDbGb3DGksiqy9yN-CnrnugNEIBWOhIDV_5pWRvHTkvdb00DL1rBWAshmiv7secUK0r9-KuWapcba0sJqGdfAXY8n74E-u-cWll1rfd3W9wtBwL8bU_sJa2eTwmSe8v4ODUNQOqk_AMvQ5Q3bDXxtXlAshUe62hvx9TbBUg86VssO5e18bxCZa3MYiG8pmbv5NdqqLwQwg6zWg1d9Xv3jBAxDzg4RX48JUQm1ZjWWPlnUKeEYankXjQizuzBE32IJZ9UTPvRtcUk7tC"/>
+</div>
+<span class="text-xs font-bold text-slate-500 uppercase tracking-wide">Arizona State Uni, USA</span>
+</div>
+<h3 class="font-display font-bold text-lg mb-4 line-clamp-2 leading-tight group-hover:text-primary dark:group-hover:text-accent transition-colors">BSE in Aerospace Engineering</h3>
+<div class="grid grid-cols-2 gap-4 mb-6">
+<div class="flex items-center gap-2">
+<span class="material-icons-round text-slate-400 text-lg">schedule</span>
+<span class="text-xs font-semibold">4 Years</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-icons-round text-slate-400 text-lg">payments</span>
+<span class="text-xs font-semibold">$32,000/yr</span>
+</div>
+</div>
+<button class="w-full py-3 bg-primary text-white rounded-xl font-bold hover:bg-accent transition-all flex items-center justify-center gap-2">
+                                View Details
+                                <span class="material-icons-round text-lg">visibility</span>
+</button>
+</div>
+</div>
+<div class="group bg-white dark:bg-slate-900 rounded-3xl overflow-hidden border border-slate-200 dark:border-slate-800 shadow-sm hover:shadow-xl hover:-translate-y-1 transition-all">
+<div class="relative h-48 overflow-hidden">
+<img alt="Media" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA23v_ChueOKNi-YEj3k544Q0a_EUROA6VBNk7e0tzWlNpoywt-4cW5flKgKQbtvjb5Mw5lQ8Koyfn2NjGDaeSbTZ7QzYHJsSg6z3mXuGUVxXFqsVVqsb1-2iKe0P4Odzy3Fzo3Q0SBsYIKD8VOYC7mEj4PFqcpV9zGjRsLEcIt4y7hj3SWqFIjRu4SKH_M7dP4iAadW6obP_hLmyONeUP8LDpURyBqUmRi5uroX2Vs1n2ri52bWvA6RH3eaUabjhm-IiolDuyB_ss2"/>
+<div class="absolute top-4 left-4">
+<span class="bg-primary text-white text-[10px] font-black px-2.5 py-1 rounded-full uppercase tracking-tighter">Masters</span>
+</div>
+<button class="absolute top-4 right-4 w-10 h-10 bg-white/20 backdrop-blur-md rounded-full flex items-center justify-center text-white hover:bg-white hover:text-accent transition-all">
+<span class="material-icons-round">favorite_border</span>
+</button>
+</div>
+<div class="p-6">
+<div class="flex items-center gap-3 mb-3">
+<div class="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 flex items-center justify-center overflow-hidden">
+<img alt="Uni Logo" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDsx-QCMJA8uQheOyGH7jW-In4sEe8lFif4Hp-y3-NhIwTJ4cwGdbRr6IJt_OTeItUvBPE9cDqENQZ3fnAW3KejHtuXAgQqA4EJqdGoEJneYYtPUzE2XQNMBG5X6F2FmPPUAj3g5ucsczbwZgya8B3xcgX51YfhWfU6pZAKse7PVWZ8VGhByHGUkGkfuE8rOus7-L4h6GlnzWCnG7BYJZk60GsRvGHCm6G6pvRQcR14J-GGF6gMZTHy37iUTj4K7tMiaM3B53E3a3hV"/>
+</div>
+<span class="text-xs font-bold text-slate-500 uppercase tracking-wide">University of Auckland, NZ</span>
+</div>
+<h3 class="font-display font-bold text-lg mb-4 line-clamp-2 leading-tight group-hover:text-primary dark:group-hover:text-accent transition-colors">Master of Communication</h3>
+<div class="grid grid-cols-2 gap-4 mb-6">
+<div class="flex items-center gap-2">
+<span class="material-icons-round text-slate-400 text-lg">schedule</span>
+<span class="text-xs font-semibold">1.5 Years</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-icons-round text-slate-400 text-lg">payments</span>
+<span class="text-xs font-semibold">NZ$45,000/yr</span>
+</div>
+</div>
+<button class="w-full py-3 bg-primary text-white rounded-xl font-bold hover:bg-accent transition-all flex items-center justify-center gap-2">
+                                View Details
+                                <span class="material-icons-round text-lg">visibility</span>
+</button>
+</div>
+</div>
+</div>
+<div class="mt-12 flex justify-center">
+<nav class="inline-flex items-center -space-x-px bg-white dark:bg-slate-900 p-1.5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+<a class="p-2.5 text-slate-500 hover:text-primary transition-colors" href="#">
+<span class="material-icons-round text-xl">chevron_left</span>
+</a>
+<a class="px-4 py-2 text-sm font-bold text-white bg-accent rounded-xl" href="#">1</a>
+<a class="px-4 py-2 text-sm font-bold hover:bg-slate-50 dark:hover:bg-slate-800 rounded-xl transition-colors" href="#">2</a>
+<a class="px-4 py-2 text-sm font-bold hover:bg-slate-50 dark:hover:bg-slate-800 rounded-xl transition-colors" href="#">3</a>
+<span class="px-4 py-2 text-sm font-bold text-slate-400">...</span>
+<a class="px-4 py-2 text-sm font-bold hover:bg-slate-50 dark:hover:bg-slate-800 rounded-xl transition-colors" href="#">12</a>
+<a class="p-2.5 text-slate-500 hover:text-primary transition-colors" href="#">
+<span class="material-icons-round text-xl">chevron_right</span>
+</a>
+</nav>
+</div>
+</div>
+</div>
+</main>
+<footer class="mt-20 bg-slate-900 text-white py-16">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-12">
+<div class="col-span-1 md:col-span-1">
+<div class="flex items-center gap-2 mb-6">
+<div class="w-10 h-10 bg-accent rounded-lg flex items-center justify-center">
+<span class="material-icons-round text-white">school</span>
+</div>
+<span class="font-display font-extrabold tracking-tight text-xl uppercase">UniRoute <span class="text-accent">Global</span></span>
+</div>
+<p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        Empowering Kenyan students to achieve their academic dreams on the global stage through expert guidance and personalized placement services.
+                    </p>
+<div class="flex gap-4">
+<a class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent transition-colors" href="#">
+<span class="material-icons-round text-lg">facebook</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent transition-colors" href="#">
+<span class="material-icons-round text-lg">camera_alt</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-slate-800 flex items-center justify-center hover:bg-accent transition-colors" href="#">
+<span class="material-icons-round text-lg">link</span>
+</a>
+</div>
+</div>
+<div>
+<h4 class="font-display font-bold text-lg mb-6">Quick Links</h4>
+<ul class="space-y-4 text-slate-400 text-sm">
+<li><a class="hover:text-accent transition-colors" href="#">About UniRoute</a></li>
+<li><a class="hover:text-accent transition-colors" href="#">Partner Universities</a></li>
+<li><a class="hover:text-accent transition-colors" href="#">Visa Assistance</a></li>
+<li><a class="hover:text-accent transition-colors" href="#">Scholarship Search</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-display font-bold text-lg mb-6">Explore</h4>
+<ul class="space-y-4 text-slate-400 text-sm">
+<li><a class="hover:text-accent transition-colors" href="#">Study in UK</a></li>
+<li><a class="hover:text-accent transition-colors" href="#">Study in USA</a></li>
+<li><a class="hover:text-accent transition-colors" href="#">Study in Canada</a></li>
+<li><a class="hover:text-accent transition-colors" href="#">Study in Australia</a></li>
+</ul>
+</div>
+<div>
+<h4 class="font-display font-bold text-lg mb-6">Contact Us</h4>
+<ul class="space-y-4 text-slate-400 text-sm">
+<li class="flex gap-3">
+<span class="material-icons-round text-accent">location_on</span>
+<span>Westlands, Nairobi, Kenya</span>
+</li>
+<li class="flex gap-3">
+<span class="material-icons-round text-accent">call</span>
+<span>+254 700 000 000</span>
+</li>
+<li class="flex gap-3">
+<span class="material-icons-round text-accent">email</span>
+<span>hello@unirouteglobal.co.ke</span>
+</li>
+</ul>
+</div>
+</div>
+<div class="mt-16 pt-8 border-t border-slate-800 text-center text-slate-500 text-xs">
+<p>© 2024 UniRoute Global Group. All rights reserved. | Empowering Kenyan Scholars</p>
+</div>
+</div>
+</footer>
+
+</body></html>
