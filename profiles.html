@@ -34,33 +34,33 @@
     </style>
 </head>
 <body class="bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-200 transition-colors duration-300">
-<nav class="bg-white/80 dark:bg-slate-900/80 backdrop-blur-md sticky top-0 z-50 border-b border-slate-200 dark:border-slate-800">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex justify-between h-20 items-center">
-<div class="flex items-center gap-2">
-<div class="flex items-center space-x-2">
-<div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-<span class="material-icons text-white">school</span>
-</div>
-<div class="flex flex-col">
-<span class="font-extrabold text-xl tracking-tight text-secondary dark:text-white leading-none">UNI<span class="text-primary">ROUTE</span></span>
-<span class="text-[10px] uppercase tracking-[0.2em] font-bold text-slate-500">Global Group</span>
-</div>
-</div>
-</div>
-<div class="hidden md:flex items-center space-x-8 font-semibold text-sm">
-<a class="text-secondary dark:text-slate-300 hover:text-primary dark:hover:text-primary transition" href="#">Study Abroad</a>
-<a class="text-secondary dark:text-slate-300 hover:text-primary dark:hover:text-primary transition" href="#">Destinations</a>
-<a class="text-secondary dark:text-slate-300 hover:text-primary dark:hover:text-primary transition" href="#">Scholarships</a>
-<a class="text-secondary dark:text-slate-300 hover:text-primary dark:hover:text-primary transition" href="#">Events</a>
-<button class="bg-primary hover:bg-orange-600 text-white px-6 py-2.5 rounded-full transition shadow-lg shadow-primary/20">Free Consultation</button>
-</div>
-<div class="md:hidden">
-<span class="material-icons cursor-pointer">menu</span>
-</div>
-</div>
-</div>
-</nav>
+    <nav class="sticky top-0 z-50 bg-white/90 dark:bg-background-dark/90 backdrop-blur-md border-b border-slate-200 dark:border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <a href="index.html" class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center text-white">
+                        <span class="material-icons">school</span>
+                    </div>
+                    <div>
+                        <span class="text-xl font-extrabold tracking-tight text-secondary dark:text-white uppercase leading-none block">UniRoute</span>
+                        <span class="text-[10px] tracking-[0.2em] font-semibold text-primary uppercase">Global Group</span>
+                    </div>
+                </a>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="index.html">Home</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="programs.html">Programs</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="about.html">About Us</a>
+                    <a class="text-sm font-semibold hover:text-primary transition-colors" href="testimonies.html">Success Stories</a>
+                    <a class="px-5 py-2.5 bg-secondary text-white rounded-full text-sm font-bold hover:bg-opacity-90 transition-all" href="contact.html">Contact Us</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="p-2 text-slate-600 dark:text-slate-300">
+                        <span class="material-icons">menu</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
 <div class="relative h-[450px] w-full overflow-hidden">
 <img alt="University Campus" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB8eOZq6VV4IgaF_TpHLAFiGpchmV1oeMqAnEsGY5wCiJUHUG_Lq9_K1up2e8a-hgYfZF9ta8kl8UsvohsStco_yMgAQHYE2RhGt9G-0526hqR6tWv4TtVk6ribXuOiE0d4OE-C-Sc3fkv63ZSM624z3DN-UNm7KcnrOBrf1afW-J4SVo3TIMTj9rs_1LH7oRDOm8qD82WjEBhaUOJwUtBGlMabgCV7DX6ggRfM_WCkUCPxs-j5UQ9xH8-W4dmzZcs8xGaekPtfvfLj"/>
 <div class="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/40 to-transparent"></div>
@@ -191,22 +191,22 @@
 <div class="bg-white dark:bg-slate-800 p-8 rounded-3xl shadow-xl shadow-slate-200/50 dark:shadow-none border border-slate-100 dark:border-slate-700">
 <h3 class="text-2xl font-extrabold mb-2 dark:text-white">Quick Apply</h3>
 <p class="text-sm text-slate-500 mb-6">Take the first step towards your dream career abroad.</p>
-<form class="space-y-4">
+<form action="https://formspree.io/f/xaypjkzo" class="space-y-4" method="POST">
 <div>
 <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">Full Name</label>
-<input class="w-full bg-slate-50 dark:bg-slate-900 border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary dark:text-white" placeholder="John Doe" type="text"/>
+<input class="w-full bg-slate-50 dark:bg-slate-900 border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary dark:text-white" name="name" placeholder="John Doe" required="" type="text"/>
 </div>
 <div>
 <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">Email Address</label>
-<input class="w-full bg-slate-50 dark:bg-slate-900 border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary dark:text-white" placeholder="john@example.com" type="email"/>
+<input class="w-full bg-slate-50 dark:bg-slate-900 border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary dark:text-white" name="email" placeholder="john@example.com" required="" type="email"/>
 </div>
 <div>
 <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">Phone Number</label>
-<input class="w-full bg-slate-50 dark:bg-slate-900 border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary dark:text-white" placeholder="+254 700 000 000" type="tel"/>
+<input class="w-full bg-slate-50 dark:bg-slate-900 border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary dark:text-white" name="phone" placeholder="+254 700 000 000" type="tel"/>
 </div>
 <div>
 <label class="block text-xs font-bold uppercase tracking-wider text-slate-400 mb-1">Interested Degree</label>
-<select class="w-full bg-slate-50 dark:bg-slate-900 border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary dark:text-white">
+<select class="w-full bg-slate-50 dark:bg-slate-900 border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary dark:text-white" name="degree">
 <option>Undergraduate</option>
 <option>Postgraduate</option>
 <option>PhD / Research</option>
@@ -272,70 +272,98 @@
 </div>
 </div>
 </main>
-<footer class="bg-slate-900 text-white pt-20 pb-10 mt-20">
-<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
-<div>
-<div class="flex items-center space-x-2 mb-6">
-<div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-<span class="material-icons text-white text-sm">school</span>
-</div>
-<span class="font-extrabold text-xl tracking-tight text-white leading-none">UNI<span class="text-primary">ROUTE</span></span>
-</div>
-<p class="text-slate-400 text-sm leading-relaxed mb-6">
-                        Kenya's premier study abroad agency, connecting ambitious students with world-class educational opportunities across the globe.
+    <footer class="bg-slate-900 text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center text-white">
+                            <span class="material-icons text-sm">school</span>
+                        </div>
+                        <span class="text-lg font-extrabold tracking-tight uppercase">UniRoute</span>
+                    </div>
+                    <p class="text-slate-400 text-sm leading-relaxed mb-6">
+                        UniRoute Global Group is Kenya's leading education consultancy firm, connecting students with global academic excellence.
                     </p>
-<div class="flex space-x-4">
-<a class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition" href="#"><span class="material-icons text-sm">facebook</span></a>
-<a class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition" href="#"><span class="material-icons text-sm">camera_alt</span></a>
-<a class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center hover:bg-primary transition" href="#"><span class="material-icons text-sm">link</span></a>
-</div>
-</div>
-<div>
-<h4 class="font-bold mb-6 uppercase tracking-widest text-xs text-primary">Quick Links</h4>
-<ul class="space-y-4 text-slate-400 text-sm">
-<li><a class="hover:text-white transition" href="#">About UniRoute</a></li>
-<li><a class="hover:text-white transition" href="#">Partner Universities</a></li>
-<li><a class="hover:text-white transition" href="#">Visa Services</a></li>
-<li><a class="hover:text-white transition" href="#">Contact Us</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold mb-6 uppercase tracking-widest text-xs text-primary">Popular Regions</h4>
-<ul class="space-y-4 text-slate-400 text-sm">
-<li><a class="hover:text-white transition" href="#">Study in UK</a></li>
-<li><a class="hover:text-white transition" href="#">Study in Canada</a></li>
-<li><a class="hover:text-white transition" href="#">Study in Australia</a></li>
-<li><a class="hover:text-white transition" href="#">Study in USA</a></li>
-</ul>
-</div>
-<div>
-<h4 class="font-bold mb-6 uppercase tracking-widest text-xs text-primary">Nairobi Office</h4>
-<ul class="space-y-4 text-slate-400 text-sm">
-<li class="flex items-start gap-3">
-<span class="material-icons text-primary text-sm">location_on</span>
-<span>15th Floor, Westlands Square, Nairobi, Kenya</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-icons text-primary text-sm">phone</span>
-<span>+254 700 123 456</span>
-</li>
-<li class="flex items-start gap-3">
-<span class="material-icons text-primary text-sm">email</span>
-<span>hello@unirouteglobal.com</span>
-</li>
-</ul>
-</div>
-</div>
-<div class="border-t border-slate-800 pt-8 flex flex-col md:row justify-between items-center text-xs text-slate-500">
-<p>© 2024 UniRoute Global Group. All rights reserved.</p>
-<div class="flex space-x-6 mt-4 md:mt-0">
-<a class="hover:text-white" href="#">Privacy Policy</a>
-<a class="hover:text-white" href="#">Terms of Service</a>
-</div>
-</div>
-</div>
-</footer>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 text-lg">Quick Links</h4>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li><a class="hover:text-white transition-colors" href="index.html">Home</a></li>
+                        <li><a class="hover:text-white transition-colors" href="programs.html">Programs</a></li>
+                        <li><a class="hover:text-white transition-colors" href="about.html">About Us</a></li>
+                        <li><a class="hover:text-white transition-colors" href="testimonies.html">Success Stories</a></li>
+                        <li><a class="hover:text-white transition-colors" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-6 text-lg">Contact Nairobi</h4>
+                    <ul class="space-y-4 text-slate-400 text-sm">
+                        <li class="flex items-start space-x-3">
+                            <span class="material-icons text-primary text-base">location_on</span>
+                            <span>Westlands Office Park, 5th Floor,<br/>Waiyaki Way, Nairobi, Kenya</span>
+                        </li>
+                    </ul>
+                </div>
+                                <div>
+                    <h4 class="font-bold mb-6 text-lg">Newsletter</h4>
+                    <p class="text-slate-400 text-sm mb-4">Get the latest scholarship alerts.</p>
+                    <form action="https://formspree.io/f/xdknpqwa" class="flex" method="POST">
+                        <input class="bg-slate-800 border-none rounded-l-xl px-4 py-3 w-full text-sm focus:ring-1 focus:ring-primary" name="email" placeholder="Your email" required="" type="email"/>
+                        <button class="bg-primary hover:bg-orange-600 px-4 py-3 rounded-r-xl transition-colors" type="submit">
+                            <span class="material-icons">send</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="pt-10 border-t border-slate-800 flex flex-col md:flex-row justify-between items-center text-slate-500 text-xs text-center md:text-left">
+                                <p>© <span id="current-year"></span> UniRoute Global Group. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+        <!-- Theme Toggle -->
+    <button class="fixed bottom-6 left-6 z-50 p-4 bg-white dark:bg-slate-800 rounded-full shadow-2xl border border-slate-200 dark:border-slate-700 hover:scale-110 transition-all" id="theme-toggle">
+        <span class="hidden material-icons text-yellow-400" id="theme-toggle-dark-icon">light_mode</span>
+        <span class="material-icons text-slate-700 dark:text-slate-300" id="theme-toggle-light-icon">dark_mode</span>
+    </button>
+
+    <script>
+        // Dark mode logic
+        const themeToggleBtn = document.getElementById('theme-toggle');
+        const darkIcon = document.getElementById('theme-toggle-dark-icon');
+        const lightIcon = document.getElementById('theme-toggle-light-icon');
+        
+        function setTheme(isDark) {
+            if (isDark) {
+                document.documentElement.classList.add('dark');
+                if (darkIcon) darkIcon.classList.remove('hidden');
+                if (lightIcon) lightIcon.classList.add('hidden');
+                localStorage.setItem('color-theme', 'dark');
+            } else {
+                document.documentElement.classList.remove('dark');
+                if (darkIcon) darkIcon.classList.add('hidden');
+                if (lightIcon) lightIcon.classList.remove('hidden');
+                localStorage.setItem('color-theme', 'light');
+            }
+        }
+
+        if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+            setTheme(true);
+        } else {
+            setTheme(false);
+        }
+
+                if (themeToggleBtn) {
+            themeToggleBtn.addEventListener('click', function() {
+                setTheme(!document.documentElement.classList.contains('dark'));
+            });
+        }
+
+        // Set current year
+        const yearSpan = document.getElementById('current-year');
+        if (yearSpan) yearSpan.textContent = new Date().getFullYear();
+    </script>
 <div class="md:hidden fixed bottom-0 left-0 w-full p-4 bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 flex gap-2 z-[60]">
 <a class="flex-1 bg-secondary text-white py-3 rounded-xl font-bold text-center" href="tel:+254700000000">Call Now</a>
 <button class="flex-1 bg-primary text-white py-3 rounded-xl font-bold shadow-lg shadow-primary/30">Quick Apply</button>
